@@ -21,7 +21,7 @@ echo "[+] Ports are opened."
 echo "[*] Installing the proxy program ...."
 apt install git -y
 git clone https://github.com/snail007/goproxy
-goproxy/./install_auto.s
+goproxy/./install_auto.sh
 echo "[+] Proxy program has been installed ."
 echo "[*] Running the proxy on opened ports ...."
 screen -S 000 -d -m -- sh -c "proxy http -p :33080"
